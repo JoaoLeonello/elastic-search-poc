@@ -29,3 +29,4 @@ services:
     entrypoint: ["python3", "/app/generate_fake_products.py"]
     volumes:
       - ./generate_fake_products.py:/app/generate_fake_products.py
+      - ./data:/app/data  
