@@ -3,7 +3,7 @@ import requests
 
 app = FastAPI()
 
-ELASTICSEARCH_URL = "http://localhost:9200/products/_search"
+ELASTICSEARCH_URL = "http://elasticsearch:9200/products/_search"
 
 @app.get("/search/{name}")
 def search_by_name(name: str):
