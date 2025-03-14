@@ -30,3 +30,13 @@ services:
     volumes:
       - ./generate_fake_products.py:/app/generate_fake_products.py
       - ./data:/app/data  
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: fastapi-server
+    depends_on:
+      - elasticsearch
+    ports:
+      - "8000:8000"
