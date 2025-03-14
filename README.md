@@ -14,8 +14,8 @@ This project demonstrates how to set up an **Elasticsearch + Kibana** environmen
 📌 Getting Started
 
 1️⃣ Clone the repository
-```sh
-git clone https://github.com/seu-usuario/elastic-search-poc.git
+
+git clone this repo
 cd elastic-search-poc
 
 2️⃣ Run the project with Docker
@@ -37,3 +37,9 @@ You can run queries via Swagger UI, such as:
 🎯 Filter by category: /filter/category/{category}
 💰 Filter by price range: /filter/price?min_price=100&max_price=500
 📊 Get average price per category: /stats/avg_price_per_category
+
+
+📌 Next Steps
+✅ Optimize index performance with custom analyzers.
+✅ Implement pagination for large queries.
+⏳ Add real-time updates with event streaming.
